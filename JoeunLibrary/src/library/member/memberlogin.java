@@ -56,40 +56,4 @@ public class memberlogin extends OracleConnect {
 		}
 
 	}
-
-//	public void userMenu() {
-//		System.out.println("더조은도서관에 오신걸 환영합니다.");
-//		System.out.println("1. 책 조회 ");
-//		System.out.println("2. 전체 책 조회");
-//		System.out.println("3. 책 대여");
-//
-//	}
-
-//	public void userMode() {
-//		int choice;
-//		while (true) {
-//			userMenu();
-//			choice = scan.nextInt();
-//
-//			switch (choice) {
-//			case 1:
-//				System.out.println("책조회");
-//				books.bookSelect();
-//				break;
-//			case 2:
-//				System.out.println("전체책조회");
-//				books.bookAll();
-//				break;
-//			case 3:
-//				System.out.println("책 대여");
-//				book.rentalbook();
-//				break;
-//			default:
-//				System.out.println("잘못 입력하셨습니다.");
-//				break;
-//
-//			}
-//		}
-//	}
-
 }

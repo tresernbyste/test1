@@ -8,5 +8,4 @@ public interface Lconnect {
 	void execute();
 	void close();
 	
-	String scanValue(String title);
 }

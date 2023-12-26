@@ -19,6 +19,9 @@ public class books extends OracleConnect {
 
 		System.out.println("책 수량 : ");
 		int bookAmount = scan.nextInt();
+		scan.nextLine();
+		
+		
 		
 
 		try {
@@ -32,8 +35,10 @@ public class books extends OracleConnect {
 			} else {
 				System.out.println("데이터 입력에 실패했습니다.(#추가오류)");
 			}
-			System.out.println("insertCount : " + updateCount);
+//			System.out.println("insertCount : " + updateCount);
 		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("데이터 입력오류");
 		}
 
 	}

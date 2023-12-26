@@ -1,6 +1,6 @@
 package library.connect;
 
-import java.sql.CallableStatement;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,8 +11,10 @@ import java.util.Scanner;
 
 public class OracleConnect implements Lconnect {
 	public Connection con = null;
-	public PreparedStatement psmt = null;   //  회원가입
-	public PreparedStatement psmt1 = null;   //  회원가입
+	public PreparedStatement psmt = null;   
+	public PreparedStatement psmt1 = null;  
+	public PreparedStatement psmt2 = null;   
+	public PreparedStatement psmt3 = null;   
 	public Statement stmt = null;
 	public ResultSet rs = null;
 	public ResultSet rs1 = null;
@@ -63,10 +65,13 @@ public class OracleConnect implements Lconnect {
 			if (con != null)con.close();
 				
 			if (psmt != null)psmt.close();
+			if (psmt1 != null)psmt.close();
 				
 			if (rs != null)rs.close();
-				
-
+			if (rs1 != null)rs.close();
+			if (rs2 != null)rs.close();
+			if (rs3 != null)rs.close();
+		
 			if (stmt != null)stmt.close();
 				
 		

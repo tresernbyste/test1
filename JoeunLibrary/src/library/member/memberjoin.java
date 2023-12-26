@@ -10,7 +10,9 @@ public class memberjoin extends OracleConnect {
 
 		super("library", "1234");
 	}
-
+	
+	
+	// 회원 등록
 	public void excute() {
 		try {
 			Scanner scan = new Scanner(System.in);
